@@ -1,0 +1,145 @@
+Channels:
+ - conda-forge
+ - defaults
+Platform: linux-64
+
+Collecting package metadata (repodata.json): done
+
+
+Solving environment: done
+## Package Plan ##
+  environment location: /opt/conda/envs/nyc_airbnb_dev
+  added / updated specs:
+    - ydata-profiling
+The following packages will be downloaded:
+    package                    |            build
+    ---------------------------|-----------------
+    annotated-types-0.7.0      |     pyhd8ed1ab_0          18 KB  conda-forge
+    dacite-1.8.1               |     pyhd8ed1ab_0          19 KB  conda-forge
+    htmlmin-0.1.12             |     pyhca7485f_2          24 KB  conda-forge
+    imagehash-4.3.1            |     pyhd8ed1ab_0         294 KB  conda-forge
+    libllvm14-14.0.6           |       hcd5def8_4        30.0 MB  conda-forge
+    llvmlite-0.43.0            |  py312h9c5d478_0         3.3 MB  conda-forge
+    multimethod-1.11           |     pyhd8ed1ab_1          15 KB  conda-forge
+    networkx-3.3               |     pyhd8ed1ab_1         1.1 MB  conda-forge
+    numba-0.60.0               |  py312h83e6fd3_0         5.4 MB  conda-forge
+    patsy-0.5.6                |     pyhd8ed1ab_0         183 KB  conda-forge
+    phik-0.12.3                |  py312h5b9907d_1         632 KB  conda-forge
+    pybind11-abi-4             |       hd8ed1ab_3          10 KB  conda-forge
+    pydantic-2.7.4             |     pyhd8ed1ab_0         275 KB  conda-forge
+    pydantic-core-2.18.4       |  py312h4413252_0         1.6 MB  conda-forge
+    pywavelets-1.4.1           |  py312hc7c0aa3_1         3.6 MB  conda-forge
+    seaborn-base-0.13.2        |     pyhd8ed1ab_2         229 KB  conda-forge
+    statsmodels-0.14.2         |  py312h085067d_0        11.7 MB  conda-forge
+    tqdm-4.66.4                |     pyhd8ed1ab_0          87 KB  conda-forge
+    typeguard-4.3.0            |     pyhd8ed1ab_0          34 KB  conda-forge
+    visions-0.7.6              |     pyhd8ed1ab_1          65 KB  conda-forge
+    wordcloud-1.9.3            |  py312h98912ed_1         187 KB  conda-forge
+    ydata-profiling-4.8.3      |     pyhd8ed1ab_1         200 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:        58.9 MB
+The following NEW packages will be INSTALLED:
+  annotated-types    conda-forge/noarch::annotated-types-0.7.0-pyhd8ed1ab_0
+  colorama           conda-forge/noarch::colorama-0.4.6-pyhd8ed1ab_0
+  dacite             conda-forge/noarch::dacite-1.8.1-pyhd8ed1ab_0
+  htmlmin            conda-forge/noarch::htmlmin-0.1.12-pyhca7485f_2
+  imagehash          conda-forge/noarch::imagehash-4.3.1-pyhd8ed1ab_0
+  libllvm14          conda-forge/linux-64::libllvm14-14.0.6-hcd5def8_4
+  llvmlite           conda-forge/linux-64::llvmlite-0.43.0-py312h9c5d478_0
+  multimethod        conda-forge/noarch::multimethod-1.11-pyhd8ed1ab_1
+  networkx           conda-forge/noarch::networkx-3.3-pyhd8ed1ab_1
+  numba              conda-forge/linux-64::numba-0.60.0-py312h83e6fd3_0
+  patsy              conda-forge/noarch::patsy-0.5.6-pyhd8ed1ab_0
+  phik               conda-forge/linux-64::phik-0.12.3-py312h5b9907d_1
+  pybind11-abi       conda-forge/noarch::pybind11-abi-4-hd8ed1ab_3
+  pydantic           conda-forge/noarch::pydantic-2.7.4-pyhd8ed1ab_0
+  pydantic-core      conda-forge/linux-64::pydantic-core-2.18.4-py312h4413252_0
+  pywavelets         conda-forge/linux-64::pywavelets-1.4.1-py312hc7c0aa3_1
+  seaborn-base       conda-forge/noarch::seaborn-base-0.13.2-pyhd8ed1ab_2
+  statsmodels        conda-forge/linux-64::statsmodels-0.14.2-py312h085067d_0
+  tqdm               conda-forge/noarch::tqdm-4.66.4-pyhd8ed1ab_0
+  typeguard          conda-forge/noarch::typeguard-4.3.0-pyhd8ed1ab_0
+  visions            conda-forge/noarch::visions-0.7.6-pyhd8ed1ab_1
+  wordcloud          conda-forge/linux-64::wordcloud-1.9.3-py312h98912ed_1
+  ydata-profiling    conda-forge/noarch::ydata-profiling-4.8.3-pyhd8ed1ab_1
+Downloading and Extracting Packages:
+libllvm14-14.0.6     | 30.0 MB   | #################################4    |  90%
+statsmodels-0.14.2   | 11.7 MB   | ##########################9           |  73%
+numba-0.60.0         | 5.4 MB    | ################################7     |  89%
+pywavelets-1.4.1     | 3.6 MB    | ##################################### | 100%
+llvmlite-0.43.0      | 3.3 MB    | ##################################### | 100%
+pydantic-core-2.18.4 | 1.6 MB    | ##################################### | 100%
+networkx-3.3         | 1.1 MB    | ##################################### | 100%
+phik-0.12.3          | 632 KB    | ##################################### | 100%
+imagehash-4.3.1      | 294 KB    | ##################################### | 100%
+pydantic-2.7.4       | 275 KB    | ##1                                   |   6%
+seaborn-base-0.13.2  | 229 KB    | ##5                                   |   7%
+ydata-profiling-4.8. | 200 KB    | ##9                                   |   8%
+wordcloud-1.9.3      | 187 KB    | ###1                                  |   9%
+patsy-0.5.6          | 183 KB    | ###2                                  |   9%
+tqdm-4.66.4          | 87 KB     | ######7                               |  18%
+visions-0.7.6        | 65 KB     | #########1                            |  25%
+typeguard-4.3.0      | 34 KB     | #################4                    |  47%
+htmlmin-0.1.12       | 24 KB     | ########################2             |  65%
+dacite-1.8.1         | 19 KB     | ###############################4      |  85%
+annotated-types-0.7. | 18 KB     | #################################2    |  90%
+multimethod-1.11     | 15 KB     | ##################################### | 100%
+
+Preparing transaction: done
+Verifying transaction: done
+
+Executing transaction: done
+Requirement already satisfied: numba in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (0.60.0)
+Requirement already satisfied: llvmlite<0.44,>=0.43.0dev0 in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from numba) (0.43.0)
+Requirement already satisfied: numpy<2.1,>=1.22 in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from numba) (1.26.4)
+Requirement already satisfied: numba in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (0.60.0)
+Requirement already satisfied: llvmlite<0.44,>=0.43.0dev0 in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from numba) (0.43.0)
+Requirement already satisfied: numpy<2.1,>=1.22 in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from numba) (1.26.4)
+/opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+Collecting ipywidgets
+  Downloading ipywidgets-8.1.3-py3-none-any.whl.metadata (2.4 kB)
+Requirement already satisfied: comm>=0.1.3 in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from ipywidgets) (0.2.2)
+Requirement already satisfied: ipython>=6.1.0 in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from ipywidgets) (8.25.0)
+Requirement already satisfied: traitlets>=4.3.1 in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from ipywidgets) (5.14.3)
+Collecting widgetsnbextension~=4.0.11 (from ipywidgets)
+  Downloading widgetsnbextension-4.0.11-py3-none-any.whl.metadata (1.6 kB)
+Collecting jupyterlab-widgets~=3.0.11 (from ipywidgets)
+  Downloading jupyterlab_widgets-3.0.11-py3-none-any.whl.metadata (4.1 kB)
+Requirement already satisfied: decorator in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from ipython>=6.1.0->ipywidgets) (5.1.1)
+Requirement already satisfied: jedi>=0.16 in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from ipython>=6.1.0->ipywidgets) (0.19.1)
+Requirement already satisfied: matplotlib-inline in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from ipython>=6.1.0->ipywidgets) (0.1.7)
+Requirement already satisfied: prompt-toolkit<3.1.0,>=3.0.41 in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from ipython>=6.1.0->ipywidgets) (3.0.47)
+Requirement already satisfied: pygments>=2.4.0 in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from ipython>=6.1.0->ipywidgets) (2.18.0)
+Requirement already satisfied: stack-data in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from ipython>=6.1.0->ipywidgets) (0.6.2)
+Requirement already satisfied: pexpect>4.3 in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from ipython>=6.1.0->ipywidgets) (4.9.0)
+Requirement already satisfied: parso<0.9.0,>=0.8.3 in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from jedi>=0.16->ipython>=6.1.0->ipywidgets) (0.8.4)
+Requirement already satisfied: ptyprocess>=0.5 in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from pexpect>4.3->ipython>=6.1.0->ipywidgets) (0.7.0)
+Requirement already satisfied: wcwidth in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from prompt-toolkit<3.1.0,>=3.0.41->ipython>=6.1.0->ipywidgets) (0.2.13)
+Requirement already satisfied: executing>=1.2.0 in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from stack-data->ipython>=6.1.0->ipywidgets) (2.0.1)
+Requirement already satisfied: asttokens>=2.1.0 in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from stack-data->ipython>=6.1.0->ipywidgets) (2.4.1)
+Requirement already satisfied: pure-eval in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from stack-data->ipython>=6.1.0->ipywidgets) (0.2.2)
+Requirement already satisfied: six>=1.12.0 in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from asttokens>=2.1.0->stack-data->ipython>=6.1.0->ipywidgets) (1.16.0)
+Downloading ipywidgets-8.1.3-py3-none-any.whl (139 kB)
+   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[39m [32m139.4/139.4 kB[39m [31m3.0 MB/s[39m eta [36m0:00:00
+[?25hDownloading jupyterlab_widgets-3.0.11-py3-none-any.whl (214 kB)
+   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[39m [32m214.4/214.4 kB[39m [31m6.4 MB/s[39m eta [36m0:00:00
+[?25hDownloading widgetsnbextension-4.0.11-py3-none-any.whl (2.3 MB)
+   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[39m [32m2.3/2.3 MB[39m [31m24.1 MB/s[39m eta [36m0:00:00
+[?25hInstalling collected packages: widgetsnbextension, jupyterlab-widgets, ipywidgets
+Successfully installed ipywidgets-8.1.3 jupyterlab-widgets-3.0.11 widgetsnbextension-4.0.11
+[?25hInstalling collected packages: widgetsnbextension, jupyterlab-widgets, ipywidgets
+Summarize dataset:  78%|███████▊  | 18/23 [00:00<00:00, 20.03it/s, Calculate auto correlation]/opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages/ydata_profiling/model/correlations.py:66: UserWarning: There was an attempt to calculate the auto correlation, but this failed.
+To hide this warning, disable the calculation
+(using `df.profile_report(correlations={"auto": {"calculate": False}})`
+If this is problematic for your use case, please report this as an issue:
+https://github.com/ydataai/ydata-profiling/issues
+(include the error message: 'could not convert string to float: 'Queens'')
+  warnings.warn(
+
+
+
+
+Summarize dataset: 100%|██████████| 126/126 [00:12<00:00, 10.37it/s, Completed]
+Generate report structure: 100%|██████████| 1/1 [00:05<00:00,  5.57s/it]
+

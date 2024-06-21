@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/Mlops_final_project/mlruns/0/3baa9acfd3c341b492f4b328df8f118b/artifacts
+end_time: 1718960686941
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3baa9acfd3c341b492f4b328df8f118b
+run_name: orderly-shrike-524
+run_uuid: 3baa9acfd3c341b492f4b328df8f118b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718960625466
+status: 4
+tags: []
+user_id: codespace

@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/Mlops_final_project/mlruns/0/0978f33155fd407e83fafb345a6800f1/artifacts
+end_time: 1718960688104
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0978f33155fd407e83fafb345a6800f1
+run_name: crawling-elk-116
+run_uuid: 0978f33155fd407e83fafb345a6800f1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718960373149
+status: 4
+tags: []
+user_id: codespace

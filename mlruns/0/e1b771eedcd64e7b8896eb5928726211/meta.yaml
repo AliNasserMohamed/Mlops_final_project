@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/Mlops_final_project/mlruns/0/e1b771eedcd64e7b8896eb5928726211/artifacts
+end_time: 1718961577569
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e1b771eedcd64e7b8896eb5928726211
+run_name: nimble-conch-961
+run_uuid: e1b771eedcd64e7b8896eb5928726211
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718961565466
+status: 3
+tags: []
+user_id: codespace

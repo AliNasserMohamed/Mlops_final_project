@@ -1,0 +1,4 @@
+2024-06-21 09:02:55,929 Downloading artifact sample.csv:latest
+2024-06-21 09:02:56,814 Loading DataFrame
+2024-06-21 09:02:56,881 Drop outliers and convert datetime
+2024-06-21 09:02:56,937 Saving Dataframe clean_sample.csv

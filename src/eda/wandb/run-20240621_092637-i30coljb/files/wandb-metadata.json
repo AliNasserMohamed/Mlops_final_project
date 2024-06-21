@@ -1,0 +1,49 @@
+{
+    "os": "Linux-6.5.0-1021-azure-x86_64-with-glibc2.31",
+    "python": "3.12.4",
+    "heartbeatAt": "2024-06-21T09:26:37.792854",
+    "startedAt": "2024-06-21T09:26:37.389338",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/AliNasserMohamed/Mlops_final_project",
+        "commit": "708662d690b317fcd217983ebd2a7ba6fa8c4ff9"
+    },
+    "email": "ali01142765209@gmail.com",
+    "root": "/workspaces/Mlops_final_project",
+    "host": "codespaces-efd7ba",
+    "username": "codespace",
+    "executable": "/opt/conda/envs/nyc_airbnb_dev/bin/python",
+    "cpu_count": 1,
+    "cpu_count_logical": 2,
+    "cpu_freq": {
+        "current": 3181.8845,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3169.362,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3194.407,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 31.32598876953125,
+            "used": 17.636280059814453
+        }
+    },
+    "memory": {
+        "total": 7.743709564208984
+    }
+}

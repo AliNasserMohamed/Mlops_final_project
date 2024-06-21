@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/Mlops_final_project/mlruns/0/4bbadea0ffb24f0a81a36e618d580f5b/artifacts
+end_time: 1718960544098
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4bbadea0ffb24f0a81a36e618d580f5b
+run_name: smiling-steed-476
+run_uuid: 4bbadea0ffb24f0a81a36e618d580f5b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718960458222
+status: 3
+tags: []
+user_id: codespace

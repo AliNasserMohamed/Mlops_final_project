@@ -1,0 +1,262 @@
+diff --git a/src/eda/EDA.ipynb b/src/eda/EDA.ipynb
+index 3572557..3dd1764 100644
+--- a/src/eda/EDA.ipynb
++++ b/src/eda/EDA.ipynb
+@@ -2,9 +2,25 @@
+  "cells": [
+   {
+    "cell_type": "code",
+-   "execution_count": null,
++   "execution_count": 1,
+    "metadata": {},
+-   "outputs": [],
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "Collecting protobuf\n",
++      "  Downloading protobuf-5.27.1-cp38-abi3-manylinux2014_x86_64.whl.metadata (592 bytes)\n",
++      "Downloading protobuf-5.27.1-cp38-abi3-manylinux2014_x86_64.whl (309 kB)\n",
++      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m309.2/309.2 kB\u001b[0m \u001b[31m7.7 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m:00:01\u001b[0m\n",
++      "\u001b[?25hInstalling collected packages: protobuf\n",
++      "Successfully installed protobuf-5.27.1\n",
++      "\n",
++      "\u001b[1m[\u001b[0m\u001b[34;49mnotice\u001b[0m\u001b[1;39;49m]\u001b[0m\u001b[39;49m A new release of pip is available: \u001b[0m\u001b[31;49m24.0\u001b[0m\u001b[39;49m -> \u001b[0m\u001b[32;49m24.1\u001b[0m\n",
++      "\u001b[1m[\u001b[0m\u001b[34;49mnotice\u001b[0m\u001b[1;39;49m]\u001b[0m\u001b[39;49m To update, run: \u001b[0m\u001b[32;49mpython3 -m pip install --upgrade pip\u001b[0m\n"
++     ]
++    }
++   ],
+    "source": [
+     "! pip install protobuf\n",
+     "! export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python\n"
+@@ -12,31 +28,81 @@
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": null,
++   "execution_count": 2,
+    "metadata": {},
+-   "outputs": [],
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "Requirement already satisfied: pandas in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (2.2.2)\n",
++      "Requirement already satisfied: numpy>=1.26.0 in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from pandas) (1.26.4)\n",
++      "Requirement already satisfied: python-dateutil>=2.8.2 in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from pandas) (2.9.0)\n",
++      "Requirement already satisfied: pytz>=2020.1 in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from pandas) (2024.1)\n",
++      "Requirement already satisfied: tzdata>=2022.7 in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from pandas) (2024.1)\n",
++      "Requirement already satisfied: six>=1.5 in /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages (from python-dateutil>=2.8.2->pandas) (1.16.0)\n"
++     ]
++    }
++   ],
+    "source": [
+     "! pip install pandas"
+    ]
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": null,
++   "execution_count": 3,
+    "metadata": {},
+-   "outputs": [],
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "Name: wandb\n",
++      "Version: 0.17.2\n",
++      "Summary: A CLI and library for interacting with the Weights & Biases API.\n",
++      "Home-page: \n",
++      "Author: \n",
++      "Author-email: Weights & Biases <support@wandb.com>\n",
++      "License: MIT License\n",
++      "\n",
++      "Copyright (c) 2021 Weights and Biases, Inc.\n",
++      "\n",
++      "Permission is hereby granted, free of charge, to any person obtaining a copy\n",
++      "of this software and associated documentation files (the \"Software\"), to deal\n",
++      "in the Software without restriction, including without limitation the rights\n",
++      "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n",
++      "copies of the Software, and to permit persons to whom the Software is\n",
++      "furnished to do so, subject to the following conditions:\n",
++      "\n",
++      "The above copyright notice and this permission notice shall be included in all\n",
++      "copies or substantial portions of the Software.\n",
++      "\n",
++      "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n",
++      "IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n",
++      "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n",
++      "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n",
++      "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n",
++      "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n",
++      "SOFTWARE.\n",
++      "Location: /opt/conda/envs/nyc_airbnb_dev/lib/python3.12/site-packages\n",
++      "Requires: click, docker-pycreds, gitpython, platformdirs, protobuf, psutil, pyyaml, requests, sentry-sdk, setproctitle, setuptools\n",
++      "Required-by: \n"
++     ]
++    }
++   ],
+    "source": [
+-    "! pip show protobuf "
++    "! pip show wandb "
+    ]
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": 13,
++   "execution_count": 4,
+    "metadata": {},
+    "outputs": [
+     {
+      "data": {
+       "text/html": [
+-       "Finishing last run (ID:d5v6d8ts) before initializing another..."
++       "Finishing last run (ID:a4356o32) before initializing another..."
+       ],
+       "text/plain": [
+        "<IPython.core.display.HTML object>"
+@@ -48,7 +114,7 @@
+     {
+      "data": {
+       "text/html": [
+-       "<br/>Waiting for W&B process to finish, PID 154280<br/>Program ended successfully."
++       " View run <strong style=\"color:#cdcd00\">usual-snow-1</strong> at: <a href='https://wandb.ai/ali01142765209/nyc_airbnb/runs/a4356o32' target=\"_blank\">https://wandb.ai/ali01142765209/nyc_airbnb/runs/a4356o32</a><br/> View project at: <a href='https://wandb.ai/ali01142765209/nyc_airbnb' target=\"_blank\">https://wandb.ai/ali01142765209/nyc_airbnb</a><br/>Synced 7 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)"
+       ],
+       "text/plain": [
+        "<IPython.core.display.HTML object>"
+@@ -57,24 +123,10 @@
+      "metadata": {},
+      "output_type": "display_data"
+     },
+-    {
+-     "data": {
+-      "application/vnd.jupyter.widget-view+json": {
+-       "model_id": "ac169bc74fc04fbcadc184ad2e47a709",
+-       "version_major": 2,
+-       "version_minor": 0
+-      },
+-      "text/plain": [
+-       "VBox(children=(Label(value=' 0.01MB of 0.01MB uploaded (0.00MB deduped)\\r'), FloatProgress(value=1.0, max=1.0)…"
+-      ]
+-     },
+-     "metadata": {},
+-     "output_type": "display_data"
+-    },
+     {
+      "data": {
+       "text/html": [
+-       "Find user logs for this run at: <code>/workspaces/nd0821-c2-build-model-workflow-starter/src/eda/wandb/run-20240620_164011-d5v6d8ts/logs/debug.log</code>"
++       "Find logs at: <code>./wandb/run-20240621_085857-a4356o32/logs</code>"
+       ],
+       "text/plain": [
+        "<IPython.core.display.HTML object>"
+@@ -86,7 +138,7 @@
+     {
+      "data": {
+       "text/html": [
+-       "Find internal logs for this run at: <code>/workspaces/nd0821-c2-build-model-workflow-starter/src/eda/wandb/run-20240620_164011-d5v6d8ts/logs/debug-internal.log</code>"
++       "The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require(\"core\")`! See https://wandb.me/wandb-core for more information."
+       ],
+       "text/plain": [
+        "<IPython.core.display.HTML object>"
+@@ -98,7 +150,7 @@
+     {
+      "data": {
+       "text/html": [
+-       "Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)"
++       "Successfully finished last run (ID:a4356o32). Initializing new run:<br/>"
+       ],
+       "text/plain": [
+        "<IPython.core.display.HTML object>"
+@@ -106,78 +158,6 @@
+      },
+      "metadata": {},
+      "output_type": "display_data"
+-    },
+-    {
+-     "data": {
+-      "text/html": [
+-       "\n",
+-       "                    <br/>Synced <strong style=\"color:#cdcd00\">resilient-field-135</strong>: <a href=\"https://wandb.ai/https-must-edu-eg-apply-to-must-/nyc_airbnb/runs/d5v6d8ts\" target=\"_blank\">https://wandb.ai/https-must-edu-eg-apply-to-must-/nyc_airbnb/runs/d5v6d8ts</a><br/>\n",
+-       "                "
+-      ],
+-      "text/plain": [
+-       "<IPython.core.display.HTML object>"
+-      ]
+-     },
+-     "metadata": {},
+-     "output_type": "display_data"
+-    },
+-    {
+-     "data": {
+-      "text/html": [
+-       "...Successfully finished last run (ID:d5v6d8ts). Initializing new run:<br/><br/>"
+-      ],
+-      "text/plain": [
+-       "<IPython.core.display.HTML object>"
+-      ]
+-     },
+-     "metadata": {},
+-     "output_type": "display_data"
+-    },
+-    {
+-     "name": "stderr",
+-     "output_type": "stream",
+-     "text": [
+-      "\u001b[34m\u001b[1mwandb\u001b[0m: wandb version 0.17.2 is available!  To upgrade, please run:\n",
+-      "\u001b[34m\u001b[1mwandb\u001b[0m:  $ pip install wandb --upgrade\n"
+-     ]
+-    },
+-    {
+-     "data": {
+-      "text/html": [
+-       "\n",
+-       "                Tracking run with wandb version 0.10.31<br/>\n",
+-       "                Syncing run <strong style=\"color:#cdcd00\">happy-music-140</strong> to <a href=\"https://wandb.ai\" target=\"_blank\">Weights & Biases</a> <a href=\"https://docs.wandb.com/integrations/jupyter.html\" target=\"_blank\">(Documentation)</a>.<br/>\n",
+-       "                Project page: <a href=\"https://wandb.ai/https-must-edu-eg-apply-to-must-/nyc_airbnb\" target=\"_blank\">https://wandb.ai/https-must-edu-eg-apply-to-must-/nyc_airbnb</a><br/>\n",
+-       "                Run page: <a href=\"https://wandb.ai/https-must-edu-eg-apply-to-must-/nyc_airbnb/runs/r81uyuj4\" target=\"_blank\">https://wandb.ai/https-must-edu-eg-apply-to-must-/nyc_airbnb/runs/r81uyuj4</a><br/>\n",
+-       "                Run data is saved locally in <code>/workspaces/nd0821-c2-build-model-workflow-starter/src/eda/wandb/run-20240620_164420-r81uyuj4</code><br/><br/>\n",
+-       "            "
+-      ],
+-      "text/plain": [
+-       "<IPython.core.display.HTML object>"
+-      ]
+-     },
+-     "metadata": {},
+-     "output_type": "display_data"
+-    },
+-    {
+-     "name": "stdout",
+-     "output_type": "stream",
+-     "text": [
+-      "Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x7171a93c3fa0>> (for post_run_cell), with arguments args (<ExecutionResult object at 7171e016f9a0, execution_count=13 error_before_exec=None error_in_exec=None info=<ExecutionInfo object at 7171aa217b80, raw_cell=\"import wandb\n",
+-      "import pandas as pd\n",
+-      "\n",
+-      "run = wandb.init..\" store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell://codespaces%2Bhumble-robot-rvgwv6ggr4r2q4p/workspaces/nd0821-c2-build-model-workflow-starter/src/eda/EDA.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D> result=None>,),kwargs {}:\n"
+-     ]
+-    },
+-    {
+-     "ename": "TypeError",
+-     "evalue": "_pause_backend() takes 1 positional argument but 2 were given",
+-     "output_type": "error",
+-     "traceback": [
+-      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+-      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+-      "\u001b[0;31mTypeError\u001b[0m: _pause_backend() takes 1 positional argument but 2 were given"
+-     ]
+     }
+    ],
+    "source": [
+@@ -630,7 +610,7 @@
+    "name": "python",
+    "nbconvert_exporter": "python",
+    "pygments_lexer": "ipython3",
+-   "version": "3.9.19"
++   "version": "3.12.4"
+   }
+  },
+  "nbformat": 4,

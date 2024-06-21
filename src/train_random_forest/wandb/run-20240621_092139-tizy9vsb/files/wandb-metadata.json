@@ -1,0 +1,65 @@
+{
+    "os": "Linux-6.5.0-1021-azure-x86_64-with-glibc2.31",
+    "python": "3.12.4",
+    "heartbeatAt": "2024-06-21T09:21:40.185144",
+    "startedAt": "2024-06-21T09:21:39.786838",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--trainval_artifact",
+        "trainval_data.csv:latest",
+        "--val_size",
+        "0.2",
+        "--random_seed",
+        "42",
+        "--stratify_by",
+        "neighbourhood_group",
+        "--rf_config",
+        "/workspaces/Mlops_final_project/outputs/2024-06-21/09-18-54/rf_config.json",
+        "--max_tfidf_features",
+        "5",
+        "--output_artifact",
+        "random_forest_export"
+    ],
+    "state": "running",
+    "program": "/workspaces/Mlops_final_project/src/train_random_forest/run.py",
+    "codePathLocal": "run.py",
+    "codePath": "src/train_random_forest/run.py",
+    "git": {
+        "remote": "https://github.com/AliNasserMohamed/Mlops_final_project",
+        "commit": "708662d690b317fcd217983ebd2a7ba6fa8c4ff9"
+    },
+    "email": "ali01142765209@gmail.com",
+    "root": "/workspaces/Mlops_final_project",
+    "host": "codespaces-efd7ba",
+    "username": "codespace",
+    "executable": "/opt/conda/envs/mlflow-cc062a63ecfa81c4fe49a511de5aabce12db6f34/bin/python",
+    "cpu_count": 1,
+    "cpu_count_logical": 2,
+    "cpu_freq": {
+        "current": 3244.118,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3243.214,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3242.18,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 31.32598876953125,
+            "used": 17.593429565429688
+        }
+    },
+    "memory": {
+        "total": 7.743709564208984
+    }
+}

@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/Mlops_final_project/mlruns/0/f2c5cd140483447fa6729317258b4319/artifacts
+end_time: 1718961553471
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f2c5cd140483447fa6729317258b4319
+run_name: kindly-finch-927
+run_uuid: f2c5cd140483447fa6729317258b4319
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718961535964
+status: 3
+tags: []
+user_id: codespace

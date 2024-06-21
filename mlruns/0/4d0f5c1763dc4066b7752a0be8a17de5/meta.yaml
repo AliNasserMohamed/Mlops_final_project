@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/Mlops_final_project/mlruns/0/4d0f5c1763dc4066b7752a0be8a17de5/artifacts
+end_time: 1718960623931
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4d0f5c1763dc4066b7752a0be8a17de5
+run_name: luxuriant-worm-587
+run_uuid: 4d0f5c1763dc4066b7752a0be8a17de5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718960585183
+status: 3
+tags: []
+user_id: codespace

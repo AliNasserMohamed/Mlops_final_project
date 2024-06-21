@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/Mlops_final_project/mlruns/0/ad22c1cb9f7640e0bf32072154116cfe/artifacts
+end_time: 1718960585169
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ad22c1cb9f7640e0bf32072154116cfe
+run_name: bittersweet-duck-301
+run_uuid: ad22c1cb9f7640e0bf32072154116cfe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718960544117
+status: 3
+tags: []
+user_id: codespace

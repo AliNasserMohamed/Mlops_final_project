@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/Mlops_final_project/mlruns/0/b8eb93513d8647ac93201987d4e66a18/artifacts
+end_time: 1718961565451
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b8eb93513d8647ac93201987d4e66a18
+run_name: efficient-goose-887
+run_uuid: b8eb93513d8647ac93201987d4e66a18
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718961553486
+status: 3
+tags: []
+user_id: codespace
